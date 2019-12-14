@@ -3,6 +3,38 @@
   margin: 0;
 }
 
-jumbotron-color {
+.jumbotron-color {
   background-color: blue;
+}
+
+.center {
+	margin-left: 9%;
+	margin-top: 3%;
+}
+.check {
+	margin-left: 15%;
+}
+.width {
+	width: 30% !important;
+	margin-left: 9%;
+	margin-bottom: 3%;
+}
+.width-textarea {
+	width: 40%;
+	margin-left: 9%;
+
+}
+.width-button {
+	margin-left: 9%;
+	width: 10%;
+	margin-bottom: 3%;
+}
+.width-collapse {
+	width: 50%;
+	margin-left: 3%;
+	margin-bottom: 3%;
+}
+.todo-header {
+	font-size: 350%;
+	text-align: center;
 }
