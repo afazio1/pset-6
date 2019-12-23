@@ -3,6 +3,12 @@
   margin: 0;
 }
 
+.list-title {
+	text-align: center;
+	font-size: 150%;
+
+}
+
 .jumbotron-color {
   background-color: blue;
 }
@@ -36,5 +42,16 @@
 }
 .todo-header {
 	font-size: 350%;
+	text-align: center;
+}
+
+ul {
+	list-style-type: none;
+	
+}
+ul li {
+	list-style-type: none;
+	margin: auto;
+	font-size: 30px;
 	text-align: center;
 }
