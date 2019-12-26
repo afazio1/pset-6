@@ -52,6 +52,36 @@ ul {
 ul li {
 	list-style-type: none;
 	margin: auto;
-	font-size: 30px;
+	font-size: 25px;
 	text-align: center;
+	margin-top: 20px;
+
+
 }
+.title {
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: gray;
+	border-right: 2px solid white;
+	color: white;
+	border: 1px solid blue;
+}
+.description {
+	padding: 10px;
+	background-color: gray;
+	color: white;
+	border: 1px solid blue;
+}
+.high-priority {
+	padding: 10px;
+	background-color: red;
+	border: 1px solid blue;
+}
+.low-priority {
+	padding: 10px;
+	background-color: white;
+	border: 1px solid blue;
+}
+
