@@ -8,12 +8,8 @@ let i = -1;
 
 const submitForms = function(e) {
 	e.preventDefault();
-
-
+	
 	i += 1;
-
-	console.log(k);
-	console.log(i);
 
 	const list = document.getElementById("ul");
 
