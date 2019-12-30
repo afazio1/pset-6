@@ -67,21 +67,20 @@ ul li {
 	border-right: 2px solid white;
 	color: white;
 	border: 1px solid blue;
+	border-radius: 10px;
 }
-.description {
-	padding: 10px;
-	background-color: gray;
-	color: white;
-	border: 1px solid blue;
-}
+
 .high-priority {
 	padding: 10px;
 	background-color: red;
 	border: 1px solid blue;
+	border-radius: 10px;
+
 }
 .low-priority {
 	padding: 10px;
 	background-color: white;
 	border: 1px solid blue;
+	border-radius: 10px;
 }
 
