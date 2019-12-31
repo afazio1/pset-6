@@ -19,14 +19,21 @@ ul li {
 	padding: 10px;
 	border-radius: 5px;
 	margin-bottom: 20px;
-	}
-
+}
 span {
-	background-color: #F08080;
 	padding: 14px;
 	text-align: right;
-	
 }
+
+li:nth-child(odd) {
+	background-color: #919DD8;
+}
+li:nth-child(even) {
+	background-color: #F08080 ;
+}
+
+
+
 .jumbotron {
 	font-family: 'Roboto Mono', monospace;
 	background: url("https://images.unsplash.com/photo-1542435503-956c469947f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1867&q=80");
@@ -52,18 +59,10 @@ font-family: 'Roboto Mono', monospace;
 }
 
 .high-priority {
-	background-color: #F08080;
+	
 	width: 50px;
 	height: 50px;
 	color: red;
-	
-}
-#low-priority {
-	background-color: #007bff;
-	color: white;
-	border-radius: 5px;
-	width: 50px;
-	height: 50px;
 	
 }
 
