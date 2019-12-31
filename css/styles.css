@@ -3,84 +3,67 @@
   margin: 0;
 }
 
-.list-title {
-	text-align: center;
-	font-size: 150%;
-
+body {
+	background-color: #F5EBF1;
 }
-
-.jumbotron-color {
-  background-color: blue;
-}
-
-.center {
-	margin-left: 9%;
-	margin-top: 3%;
-}
-.check {
-	margin-left: 15%;
-}
-.width {
-	width: 30% !important;
-	margin-left: 9%;
-	margin-bottom: 3%;
-}
-.width-textarea {
-	width: 40%;
-	margin-left: 9%;
-
-}
-.width-button {
-	margin-left: 9%;
-	width: 10%;
-	margin-bottom: 3%;
-}
-.width-collapse {
-	width: 50%;
-	margin-left: 3%;
-	margin-bottom: 3%;
-}
-.todo-header {
-	font-size: 350%;
-	text-align: center;
-}
-
 ul {
 	list-style-type: none;
 	
 }
 ul li {
-	list-style-type: none;
-	margin: auto;
 	font-size: 25px;
-	text-align: center;
-	margin-top: 20px;
+	background-color: #F08080;
+	width: 50%;
+	margin: auto;
+	color: white;
+	padding: 10px;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	}
 
+span {
+	background-color: #F08080;
+	padding: 14px;
+	text-align: right;
+	
+}
+.jumbotron {
+	font-family: 'Roboto Mono', monospace;
+	background: url("https://images.unsplash.com/photo-1542435503-956c469947f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1867&q=80");
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	text-shadow: 2px 2px pink;
+	opacity: 85%;
+}
+label {
+	font-family: 'Roboto Mono', monospace;
+}
+
+.todo-header {
+
+text-align: center;
+font-family: 'Roboto Mono', monospace;
 
 }
-.title {
-	padding-left: 100px;
-	padding-right: 100px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	background-color: gray;
-	border-right: 2px solid white;
+.completed {
+	text-decoration: line-through;
 	color: white;
-	border: 1px solid blue;
-	border-radius: 10px;
 }
 
 .high-priority {
-	padding: 10px;
-	background-color: red;
-	border: 1px solid blue;
-	border-radius: 10px;
-
+	background-color: #F08080;
+	width: 50px;
+	height: 50px;
+	color: red;
+	
 }
-.low-priority {
-	padding: 10px;
-	background-color: white;
-	border: 1px solid blue;
-	border-radius: 10px;
+#low-priority {
+	background-color: #007bff;
+	color: white;
+	border-radius: 5px;
+	width: 50px;
+	height: 50px;
+	
 }
 

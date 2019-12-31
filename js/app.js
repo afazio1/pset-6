@@ -1,46 +1,46 @@
-window.onload = function() {
+$("ul").on("click", "li", function(event){
+	$(this).toggleClass("completed");
 
+});
 
-	document.getElementById("button").onclick = submitForms;
-}
-let toDoList = [];
-let i = -1;
-
-const submitForms = function(e) {
-	e.preventDefault();
-	
-	i += 1;
-
-	const list = document.getElementById("ul");
-
-	let todo = {
-		title: document.getElementById("exampleFormControlInput1").value,
-		priority: document.getElementById("defaultCheck1").checked
+//need to work on the priority part
+$("ul").on("click", "span", function(event){
+	if ($(this).hasClass("priority")) {
+		$(this).toggleClass("high-priority");
+		if ($(this).hasClass("high-priority")) {
+			$(this).parent().prependTo("ul");
+		}
+		else {
+			$(this).parent().appendTo("ul");
+		}
+		
+		event.stopPropagation();
+		console.log("high");
 	}
-
-	toDoList.push(todo);
-	
-	console.log(toDoList);
-	
-	const item = document.createElement("li");
-
-	span = document.createElement("SPAN");
-	span.className = "title";
-	span.innerHTML = toDoList[i].title;
-
-	if (toDoList[i].priority === true) {
-		span1 = document.createElement("SPAN");
-		span1.className = "high-priority";
-		span1.innerHTML = "!";
+	else {
+		
+		$(this).parent().remove();
+		event.stopPropagation();
 	}
-	else if (toDoList[i].priority === false) {
-		span1 = document.createElement("SPAN");
-		span1.className = "low-priority";
-		span1.innerHTML = "!";
-	}
-
-	item.appendChild(span);
-	item.appendChild(span1);
-	list.append(item);
 	
-}
+});
+
+$("input[type='text']").keypress(function(event){
+	if(event.which === 13){
+		//grabbing new todo text from input
+		var todoText = $(this).val();
+		$(this).val("");
+		//create a new li and add to ul
+		$("ul").append("<li><span class='priority'><i class='fa fa-exclamation-circle'></i></span><span><i class='fa fa-trash'></i></span> " + todoText + " </li>");
+		
+	}
+});
+
+
+
+
+
+
+
+
+
