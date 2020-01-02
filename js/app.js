@@ -1,3 +1,40 @@
+let array = [];
+
+list = document.querySelector("ul");
+
+.addEventListener('keyup', function(event){
+	if (event == 13) {
+		item = document.create("li");
+		item.value = "hi";
+	}
+
+
+
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
 $("ul").on("click", "li", function(event){
 	$(this).toggleClass("completed");
 
@@ -13,16 +50,16 @@ $("ul").on("click", "span", function(event){
 		else {
 			$(this).parent().appendTo("ul");
 		}
-		
+
 		event.stopPropagation();
 		console.log("high");
 	}
 	else {
-		
+
 		$(this).parent().remove();
 		event.stopPropagation();
 	}
-	
+
 });
 
 $("input[type='text']").keypress(function(event){
@@ -36,12 +73,4 @@ $("input[type='text']").keypress(function(event){
 		}
 	}
 });
-
-
-
-
-
-
-
-
-
+*/
