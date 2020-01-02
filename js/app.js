@@ -1,17 +1,31 @@
 let array = [];
 
 list = document.querySelector("ul");
-
-.addEventListener('keyup', function(event){
-	if (event == 13) {
-		item = document.create("li");
-		item.value = "hi";
-	}
+span = document.getElementById("button");
+textbox = document.querySelector("input");
+//trash = 
+let i = -1;
 
 
 
+span.addEventListener('click', function(){
+	i++;
+
+	
+	item = document.createElement("li");
+	task = textbox.value;
+
+	item.innerHTML = `<li><span class="trash">X</span><span class="priority">!</span>${task}</li>`;
+
+	array.push(item);
+	list.append(array[i]);
+	console.log(array);
 
 });
+
+
+
+
 
 
 
