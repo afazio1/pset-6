@@ -3,7 +3,7 @@ let array = [];
 list = document.querySelector("ul");
 span = document.getElementById("button");
 textbox = document.querySelector("input");
-//trash = 
+trash = document.getElementById("trash");
 let i = -1;
 
 
@@ -13,15 +13,23 @@ span.addEventListener('click', function(){
 
 	
 	item = document.createElement("li");
+	
 	task = textbox.value;
 
-	item.innerHTML = `<li><span class="trash">X</span><span class="priority">!</span>${task}</li>`;
+	item.innerHTML = `<li><span id="trash">X</span><span class="priority">!</span>${task}</li>`;
 
 	array.push(item);
 	list.append(array[i]);
 	console.log(array);
 
 });
+
+trash.addEventListener('click', function(){
+	
+	console.log("hello");
+	
+});
+	
 
 
 
