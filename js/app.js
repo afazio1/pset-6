@@ -26,7 +26,6 @@ span.addEventListener('click', function(){
 
 trash.addEventListener('click', function(){
 	
-	console.log("hello");
 	
 });
 	
