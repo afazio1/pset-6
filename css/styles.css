@@ -10,7 +10,7 @@ ul {
 	list-style-type: none;
 	
 }
-ul li {
+li, #trash, #priority {
 	font-size: 25px;
 	background-color: #F08080;
 	width: 50%;

@@ -1,33 +1,82 @@
 let array = [];
 
-list = document.querySelector("ul");
-span = document.getElementById("button");
-textbox = document.querySelector("input");
-trash = document.getElementById("trash");
-let i = -1;
+
+let button = document.getElementById("button");
+let textbox = document.querySelector("input");
+let body = document.querySelector("body");
+let pos = 0;
+let item;
+let list;
+let br = document.querySelector("br");
+console.log("first");
 
 
-
-span.addEventListener('click', function(){
-	i++;
-
-	
+function displayList(pos){
+for (let i = 0; i < array.length; i++){
+	list = document.querySelector("ul");
 	item = document.createElement("li");
-	
-	task = textbox.value;
-
-	item.innerHTML = `<li><span id="trash">X</span><span class="priority">!</span>${task}</li>`;
-
-	array.push(item);
-	list.append(array[i]);
+	trash = document.createElement("SPAN");
+	priority = document.createElement("SPAN");
+	trash.setAttribute("id", "trash");
+	priority.setAttribute("id", "priority");
+	item.setAttribute("id", pos);
+	console.log(item.id);
 	console.log(array);
-
-});
-
-trash.addEventListener('click', function(){
+	item.innerHTML = array[pos].title
+	trash.innerHTML = "X";
+	priority.innerHTML = "!";
+	pos++;
+	}
 	
-	
+	item.prepend(priority);
+	item.prepend(trash);
+	list.append(item);
+
+	console.log(pos);
+
+return pos;
+}
+
+
+
+
+body.addEventListener('click', function(event){
+	elementClicked = event.target;
+
+	if (elementClicked.id == "button") {
+		array.push({
+		title: textbox.value,
+		priority: false,
+		remove: false,
+	});
+	console.log("sencond");
+	displayList(pos);
+	}
+
+	else if (elementClicked.id == "trash") {
+		console.log("trash");
+		pos = item.id;
+		deleteItem(pos);
+		//displayList(pos);
+		
+		
+	}
 });
+//items don't delete properly
+function deleteItem(pos) {
+
+array.splice(pos - 1, pos + 1);
+
+item = document.getElementById(pos);
+
+item.remove()
+pos = 0;
+
+
+
+
+}
+
 	
 
 
