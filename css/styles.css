@@ -32,7 +32,15 @@ li:nth-child(even) {
 	background-color: #F08080 ;
 }
 
-
+#button {
+	text-align: center;
+	padding: 10px;
+	font-family: 'Roboto Mono', monospace;
+	border: solid 2px #F08080;
+	margin-top: auto;
+	background-color: white;
+	border-radius: 5px;
+}
 
 .jumbotron {
 	font-family: 'Roboto Mono', monospace;
@@ -56,6 +64,7 @@ font-family: 'Roboto Mono', monospace;
 .completed {
 	text-decoration: line-through;
 	color: white;
+	border: solid 2px white;
 }
 
 .high-priority {
