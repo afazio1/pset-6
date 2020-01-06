@@ -1,19 +1,17 @@
 let array = [];
 
+//toggles completion
 $("ul").on("click", "li", function(event){
 
 	$(this).toggleClass("completed");
 
 });
-
-//need to work on the priority part
+//toggles priority and deletion
 $("ul").on("click", "span", function(event){
 	if ($(this).hasClass("priority")) {
 		$(this).toggleClass("high-priority");
 		if ($(this).hasClass("high-priority")) {
 			$(this).parent().prependTo("ul");
-			console.log(array);
-
 		}
 		else {
 			$(this).parent().appendTo("ul");
@@ -32,9 +30,8 @@ $("ul").on("click", "span", function(event){
 	}
 
 });
-
+//adds items to list & array
 $("span").click(function(event){
-	console.log("clicked button");
 	input = $("input");
 	inputValue = input.val();
 	if(event.target.id === "button") {
@@ -52,7 +49,7 @@ $("span").click(function(event){
 
 		$(input).val("");
 		//create a new li and add to ul
-		$("ul").append("<li><span class='priority'><i class='fa fa-exclamation-circle'></i></span><span id=delete-" + item.id + " class='trash'><i class='fa fa-trash'></i></span> " + item.content + " </li>");
+		$("ul").append("<li><span class='priority'><i class='fa fa-exclamation-circle'></i></span><span id=delete-" + item.id + " class='trash'><i class='fa fa-trash'></i></span> " + item.content + " <span class='sort'><i class='fa fa-arrows'></i></span></li>");
 	}
 });
 
